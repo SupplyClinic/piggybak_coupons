@@ -46,6 +46,8 @@ var piggybak_coupons = {
 					$('#coupon_application_row').show();
 					piggybak.update_tax();
 					piggybak.update_totals();
+					$("#store_credit .apply-store-credit").hide();
+					$("#store_credit .coupon-already-applied").show();
 				} else {
 					if($('#coupon_code').val() != '') {
 						$('#coupon_response').html(data.message).show();
@@ -61,5 +63,5 @@ var piggybak_coupons = {
 				$('#coupon_ajax').hide();
 			}
 		});
-	}	
+	}
 };
